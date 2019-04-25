@@ -4,8 +4,10 @@
 ### Note: 
 Before being able to run this script without using ISE, you will need to set the execution policy. 
 1. Run PowerShell ISE as Administrator
-2. Run the following command to unblock the script: _Unblock-File -Path c:\Path\to\script.ps1_
-3. Run the following command to allow the script to run: _Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine_
+2. Run the following command to unblock the script: 
+	- _Unblock-File -Path c:\Path\to\script.ps1_
+3. Run the following command to allow the script to run: 
+	- _Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine_
 
 ### You can set this to run each time you login to the machine, for exmample every morning. 
 1. Open Task Scheduler
