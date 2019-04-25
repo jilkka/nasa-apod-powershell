@@ -13,5 +13,5 @@ Before being able to run this script without using ISE, you will need to set the
 3. Give it a name and description; _APOD Wallpaper_, for example.
 4. Set a trigger as desired, _When I log in_ for example.
 5. Start a program: 
-	- _powershell.exe C:\path\to\script.ps1
+	- _powershell.exe C:\path\to\script.ps1_
 6. Test it out. 
