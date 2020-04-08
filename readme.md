@@ -2,6 +2,11 @@
 ## Set NASA's Astronomy Photo of the Day as your desktop background using PowerShell
 
 ### Note: 
+Chose location where to place the script
+1. Create a folder where to place the script, eg: C:\User\Peter\APOD\
+2. Place the powershell script into newly created folder^^
+3. Edit the script file on line 8 and 11 to replace with the correct path to script file location; Replace "\<UserAccount\>" with your real account name.
+
 Before being able to run this script without using ISE, you will need to set the execution policy. 
 1. Run PowerShell ISE as Administrator
 2. Run the following command to unblock the script: 
