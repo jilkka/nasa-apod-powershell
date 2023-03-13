@@ -4,11 +4,11 @@ if (!(Test-Path "$env:USERPROFILE\Pictures\apod")) {mkdir "$env:USERPROFILE\Pict
 $PICTURES_DIR = "$env:USERPROFILE\Pictures\apod"
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-Invoke-WebRequest -Uri https://apod.nasa.gov/apod -OutFile "C:\temp\apod.html"
+Invoke-WebRequest -Uri https://apod.nasa.gov/apod/ -UserAgent "Mozilla/5.0" -OutFile "C:\temp\apod.html"
 $returnImg = Select-String -Pattern jpg -Path "C:\temp\apod.html" | Select-Object -First 1
 $imgString = $returnImg.ToString(-split "`n")
-$resultImg = $imgString.Substring(30) -replace "..$"
-$imgURL = "https://apod.nasa.gov/apod/" + "$resultImg"
+$resultImg = $imgString.Substring(31) -replace "..$"
+$imgURL = "https://apod.nasa.gov/apod/" + $resultImg
 Invoke-WebRequest -Uri $imgURL -OutFile "$PICTURES_DIR\apod.jpg"
 
 $ProgressPreference = 'Continue'
