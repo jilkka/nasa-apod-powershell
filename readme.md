@@ -9,7 +9,7 @@ Before being able to run this script without using ISE, you will need to set the
 3. Run the following command to allow the script to run: 
 	- _Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine_
 
-### You can set this to run each time you login to the machine, for exmample every morning. 
+### You can set this to run each time you login to the machine, for example every morning. 
 1. Open Task Scheduler
 2. Create a new local task
 3. Give it a name and description; _APOD Wallpaper_, for example.
